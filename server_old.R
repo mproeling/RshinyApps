@@ -2,7 +2,6 @@ shinyUI(
   pageWithSidebar(
     headerPanel("Test App Utrecht"
     ),
-  
     sidebarPanel(
       textInput("a", "Please select a", 2),
       textInput("b", "Please select b", 2),  
@@ -13,7 +12,6 @@ shinyUI(
       sliderInput("higher", "Please select higher bound",
                   min=0, max=1, value=0.55, step=0.05)
     ),
-   
     mainPanel(          
       plotOutput("myPlot", height = 350, width = 550)
     )
