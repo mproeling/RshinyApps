@@ -2,7 +2,7 @@ library(shiny)
 library(rdrop2)
 
 token <- drop_auth()
-saveRDS(token, "droptoken.rds")
+saveRDS(token, "herethenameofmytoken.rds")
 
 # ******** WARNING ********
 # Losing this file will give anyone complete control of your Dropbox account
@@ -10,7 +10,7 @@ saveRDS(token, "droptoken.rds")
 # ******** WARNING ********
 
 # read it back with readRDS
-token <- readRDS("droptoken.rds")
+token <- readRDS("herethenameofmytoken.rds")
 drop_acc(dtoken = token)
 
 save_data_dropbox <- function(data) {
