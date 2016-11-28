@@ -69,7 +69,7 @@ shinyServer(function(input, output, session){
 
         if(is.null(input$send) || input$send==0) return(NULL)
         from <- isolate("testsender")
-        to <- isolate("mproeling@gmail.com")
+        to <- isolate("email")
         subject <- isolate("score")
         msg <- isolate(input$control_num)
         sendmail(from, to, subject, msg)
